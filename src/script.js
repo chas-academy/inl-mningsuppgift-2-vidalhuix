@@ -76,7 +76,7 @@ export function initSearch(people) {
     for (name of people) {
       // 5. Om du hittar en match, skriv ut "Namn hittades!" i resultDisplay, ändra found till true
       if (name === searchText) {
-        resultDisplay.innerHTML = "Namn hittades!";
+        resultDisplay.innerHTML = `Namn hittades: ${name}`;
         console.log("Namn hittades!");
         found = true;
       }
